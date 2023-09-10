@@ -3,14 +3,14 @@
 :root {
 	--hp-green: #69bf53;
 	--hp-white: #fafafa;
+	font-family: "Raleway", "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: calc(15px + 0.390625vw);
 }
 
 body {
 	background-color: var(--hp-green);
 	margin: 0;
-	font-family: "Raleway", "Montserrat", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
 }
 
 /* NAV BAR + FOOTER*/
@@ -21,18 +21,19 @@ nav {
 	height: 108px;
 	display: flex;
 	justify-content: space-between;
+	gap: 24px;
 	align-items: center;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	position: relative;
 	z-index: 1;
+	overflow: scroll;
 }
 
 .logo {
-	max-width: 20vw;
+	max-width: 25vw;
 }
 
 .nav-links {
-	flex-shrink: 3;
 	display: flex;
 	gap: 16px;
 	align-items: center;
@@ -43,7 +44,8 @@ nav {
 	gap: 24px;
 	list-style-type: none;
 	font-weight: 700;
-	font-size: 1.25em;
+	font-size: 1.15rem;
+	white-space: nowrap;
 }
 
 .nav-links a:link,
@@ -127,19 +129,19 @@ footer .social {
 }
 
 h1 {
-	margin: 0;
-	font-size: 5em;
+	margin: 0 0 32px 0;
+	font-size: 5rem;
 	width: 70vw;
-	line-height: 1em;
+	line-height: 5rem;
 }
 
 .sect-1 p {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	width: 50vw;
 }
 
 .cta {
-	font-size: 1.25em;
+	font-size: 1.25rem;
 	border: 2px solid white;
 	padding: 12px 24px;
 	background-color: rgba(255, 255, 255, 0.15);
@@ -164,7 +166,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	text-align: center;
 	margin: 0;
 }
@@ -181,12 +183,12 @@ h2 {
 }
 
 .card p {
-	font-size: 1.25em;
+	font-size: 1.25rem;
 }
 
 .num {
 	font-weight: 100;
-	font-size: 10em;
+	font-size: 10rem;
 	font-variant-numeric: lining-nums;
 	text-align: center;
 	border-bottom: 2px solid white;
@@ -202,6 +204,7 @@ h2 {
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 32px;
 	margin: 32px 32px 16px 32px;
+	overflow: scroll;
 }
 
 figure {
@@ -209,6 +212,7 @@ figure {
 	flex-direction: column;
 	gap: 40px;
 	margin: 0;
+	min-width: 120px;
 }
 
 figure img {
